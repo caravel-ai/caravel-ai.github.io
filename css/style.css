@@ -1,4 +1,6 @@
-
+body{
+  overflow-x: hidden;
+}
 /*=============================================================navbar starts======================================================================*/
 .nav-transparent{
   background: transparent;
@@ -57,17 +59,12 @@
 /*======================================================================= Navbar Ends ============================================================================================*/
 /*======================================================================= index page hero-unit starts=============================================================================*/
 .index-page-hero-unit{
-  /* background: linear-gradient(87deg,#000,#000 100%);  */
-  /* background: linear-gradient(87deg,#696c70,#808080 100%)!important;   */
-  /* background: -webkit-linear-gradient(-45deg, rgb(0,22,163) 0%, rgb(0,22,163) 3%, rgb(73,155,234) 100%);    */
-  /* background: -webkit-linear-gradient(-45deg, rgb(0,22,163) 0%, rgb(0,22,163) 3%,  rgb(white) 100%);    */
-  /* background: -webkit-linear-gradient(-45deg, rgba(0,22,163,1) 48%, rgba(109,122,202,1) 57%, rgba(158,166,220,1) 61%, rgba(255,255,255,1) 69%);  */
   background: rgba(0,22,163,1);  
   position: relative;
   min-height: 700px;
   height: 95vh;
 }
-.index-page-hero-unit-two{ 
+.index-page-hero-unit-two{
   /* background: rgba(0,22,163,1);  */
   position: relative;
   transform: skew(0deg, -5deg);
@@ -76,25 +73,18 @@
   margin-top: -90px;
 }
 
-.index-page-hero-unit-two-form{ 
-  /* background: rgba(0,22,163,1);  */
-  position: relative;
-  transform: skew(0deg, -10deg);
-  background: linear-gradient(#edf1f7,#edf1f7); 
-  /* background:#b7deed; */
-  margin-top: -165px;
-}
+
 .index-page-hero-unit-three{ 
   /* background: rgb(182, 189, 235);  */
-   position: relative;
-   min-height: 300px;  
-   transform: skew(0deg, -5deg);
-   background: rgba(0,22,163,1);    
+  position: relative;
+  min-height: 300px;  
+  transform: skew(0deg, -5deg);
+  background: rgba(0,22,163,1);    
   /* background: rgba(66, 197, 245);  */
   /* background: rgba(233, 233, 240) */
-   /* background: linear-gradient(#edf1f7,#edf1f7);  */
+  /* background: linear-gradient(#edf1f7,#edf1f7);  */
   /* background: linear-gradient(#edf1f7,#edf1f7); */
-   margin-top:-90px;
+  margin-top:-90px;
 }
 
 .sectionhear{ 
@@ -115,14 +105,6 @@
   padding-bottom: 20%;
   
 }
-.content-form{
-  transform: skew(0deg ,10deg);
-  padding-bottom: 20%;
-  
-}
-/*.row{
-  padding-bottom: 20%;
-}*/
 
 .hero-unit-text-container{
   text-align: left;
@@ -148,7 +130,7 @@
   line-height: 1.1;
   letter-spacing: 1.5px;
   color:black;
-
+  
 }
 
 @media (max-width: 768px) {
@@ -189,7 +171,7 @@
   font-size:1.2 em;
 }
 
- @media only screen and (max-width: 640px) { 
+@media only screen and (max-width: 640px) { 
   .hero-unit-text-container h1,p{
     padding-left: 10px;   
   } 
@@ -233,7 +215,7 @@
   font-size: 24px;
   font-weight: 600;
   color: #161616;
-
+  
 }
 .para{
   font-family: Arial;
@@ -309,30 +291,53 @@ footer{
   {
     padding-left:10px;
   }
- .example{
-   margin-bottom: 0px;
-   margin-top: 0px;
- }
+  .example{
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
 }
 
 /*==============================footer ends==============================================*/
 
 /*===============================service page=============================================*/
-
+.service-page-hero-unit{
+  background: rgba(0,22,163,1);  
+  position: relative;
+  min-height: 700px;
+  height: 95vh;
+}
+.service-unit-text-container{
+  text-align: left;
+  color: #fff;
+}
+.service-unit-text-container h1{
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+  padding-left: 10px;
+  
+}
+.service-unit-text-container p{
+  font-weight: 300;
+  font-size: 1.5em;
+  padding-left: 10px;
+}
 box-container{
   margin-bottom: 20px; 
 }
 .box{
   width: 100%;
   background: rgba(0,22,163,1);
-  box-shadow: 5px 5px 15px rgba(0,0,0,.2);
+  box-shadow: 5px 5px 15px rgba(0,0,0,.1);
   border: 1px solid lightgray;
   padding: 20px;
   padding-bottom: 9px;
   color: #fff;
 }
 .box:hover {
-  box-shadow: 7px 7px 15px rgba(0,0,0,.5);
+  box-shadow: 7px 7px 15px rgba(255, 255, 255, 0.2);
 }
 .box h3{
   font-size: 24px;
@@ -341,21 +346,121 @@ box-container{
 .box p{
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  .service-unit-text-container h1{
+    font-size: 20px;
+    
+  }
+  .service-unit-text-container p{
+    font-size: 1em;
+  } 
+  
+}
+
+@media only screen and (max-width: 640px) { 
+  .button{
+    padding-left: 20px;
+    
+  }  
+  .servicecards{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left:20px;
+    padding-bottom: 10px;
+  }
+}
+
+
+/*=============================service page ends==============================================*/
+
+
+/*================================footer map starts====================================================*/
+.map-footer-wrap
+{
+  height: 700px;
+  position: relative;
+  margin-top:-10%;
+}
+.map-footer-wrap iframe 
+{
+  width: 102%;
+  height: 102%;
+  position: absolute;
+}
+
+/*================================footer map ends=======================================================*/
+/*==================================contact page starts==================================================*/
+
+.contact-page-hero-unit{
+  background: rgba(0,22,163,1);  
+  position: relative;
+  min-height: 700px;
+  height: 95vh;
+}
+.contact-page-hero-unit-two-form
+{ 
+  position: relative;
+  transform: skew(0deg, -10deg);
+  background: linear-gradient(#edf1f7,#edf1f7); 
+  margin-top: -165px;
+}
+.content-form{
+  transform: skew(0deg ,10deg);
+  padding-bottom: 20%; 
+}
+/*=======================================contact page ends=========================================================*/
+/*=======================================about page starts==========================================================*/
+
+.about-page-hero-unit{
+  background: rgba(0,22,163,1);  
+  position: relative;
+  min-height: 700px;
+  height: 95vh;
+}
 .us-line-black {
   height: 2px;
-  /* background-image: linear-gradient(30deg, #3B4965, #3B4965); */
-  color:white;
+  background-image: linear-gradient(30deg, #3B4965, #3B4965);
   margin-top: 5px;
   width: 50px;
 }
+.paras{
+  font-family: Arial;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.box-positions{
+  border: 1px solid #eee;
+  padding: 30px 15px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22);
+}
+.box-positions h5{
+  margin-bottom: 0px;
+}
+.box-positions p{
+  margin-bottom: 0px;
+  
+}
+.box-positions h5{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.box-positions p{
+  font-size: 18px;
+  font-weight: 300;
+}
+.about-page-hero-unit-two{
+  
+  position: relative;
+  transform: skew(0deg, -5deg);
+  background: linear-gradient(#edf1f7,#edf1f7); 
+  margin-top: -90px;
+}
+
 @media only screen and (max-width: 640px) { 
-   .button{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-  } 
-  .servicecards{
+ .jobbox{
     padding-top: 10px;
     padding-right: 10px;
     padding-left:10px;
@@ -363,4 +468,11 @@ box-container{
   }
 }
 
-/*=============================service page ends==============================================*/
+
+/*========================================about page ends===========================================================*/
+
+
+
+
+
+
